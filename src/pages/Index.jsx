@@ -23,7 +23,7 @@ const Index = () => {
         sx={{
           minHeight: "100vh",
           backgroundColor: "#f5f5f5",
-          py: 4,
+          py: 1,
         }}
       >
         <Box sx={{ maxWidth: 1200, mx: "auto" }}>

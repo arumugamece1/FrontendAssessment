@@ -79,17 +79,17 @@ const HierarchicalTable = () => {
   };
 
   return (
-    <Box sx={{ p: 3 }}>
+    <Box sx={{ p: 0 }}>
       <Typography
-        variant="h4"
+        variant="h6"
         sx={{
-          mb: 3,
+          mb: 1,
           fontWeight: 600,
           color: "#1976d2",
           textAlign: "center",
         }}
       >
-        Hierarchical Data Table
+        Hierarchical Data
       </Typography>
       <TableContainer
         component={Paper}
@@ -106,7 +106,9 @@ const HierarchicalTable = () => {
                 backgroundColor: "#1976d2",
               }}
             >
-              <TableCell sx={{ color: "white", fontWeight: 600, fontSize: "1rem" }}>
+              <TableCell
+                sx={{ color: "white", fontWeight: 600, fontSize: "1rem" }}
+              >
                 Label
               </TableCell>
               <TableCell
@@ -115,13 +117,19 @@ const HierarchicalTable = () => {
               >
                 Value
               </TableCell>
-              <TableCell sx={{ color: "white", fontWeight: 600, fontSize: "1rem" }}>
+              <TableCell
+                sx={{ color: "white", fontWeight: 600, fontSize: "1rem" }}
+              >
                 Input
               </TableCell>
-              <TableCell sx={{ color: "white", fontWeight: 600, fontSize: "1rem" }}>
+              <TableCell
+                sx={{ color: "white", fontWeight: 600, fontSize: "1rem" }}
+              >
                 Allocation %
               </TableCell>
-              <TableCell sx={{ color: "white", fontWeight: 600, fontSize: "1rem" }}>
+              <TableCell
+                sx={{ color: "white", fontWeight: 600, fontSize: "1rem" }}
+              >
                 Allocation Val
               </TableCell>
               <TableCell
