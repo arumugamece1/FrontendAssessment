@@ -9,12 +9,17 @@ import {
 } from "@mui/material";
 import { calculateVariance } from "@/utils/hierarchyUtils";
 
-const TableRowComponent = ({ row, level, onAllocatePercentage, onAllocateValue }) => {
+const TableRowComponent = ({
+  row,
+  level,
+  onAllocatePercentage,
+  onAllocateValue,
+}) => {
   const [inputValue, setInputValue] = useState("");
-  
+
   const variance = calculateVariance(row.value, row.originalValue);
   const hasChildren = row.children && row.children.length > 0;
-  
+
   const handleAllocatePercentage = () => {
     const percentage = parseFloat(inputValue);
     if (!isNaN(percentage)) {
@@ -56,7 +61,7 @@ const TableRowComponent = ({ row, level, onAllocatePercentage, onAllocateValue }
                 color: hasChildren ? "#1976d2" : "inherit",
               }}
             >
-              {level > 0 && "-- "}
+              {level > 0 && " "}
               {row.label}
             </Typography>
           </Box>
