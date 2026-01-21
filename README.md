@@ -5,3 +5,7 @@ npm i
 # Step 2: Start the development server with auto-reloading and an instant preview.
 
 npm run dev
+
+# Application URL
+
+https://frontendassessment-arumugam.netlify.app/
